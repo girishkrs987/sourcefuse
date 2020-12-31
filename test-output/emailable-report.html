@@ -9,18 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">3</td><td class="num">93,687</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">3</td><td class="num">153,537</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">Pages.BasePage</td><td><a href="#m0">Hard_assertion</a></td><td rowspan="1">1609373595070</td><td rowspan="1">150</td></tr><tr class="failedeven"><td><a href="#m1">verifyDB</a></td><td rowspan="1">1609373634775</td><td rowspan="1">2311</td></tr><tr class="failedeven"><td><a href="#m2">verifyemailTriggered</a></td><td rowspan="1">1609373649621</td><td rowspan="1">2006</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Pages.BasePage</td><td><a href="#m3">FillForm</a></td><td rowspan="1">1609373572143</td><td rowspan="1">6252</td></tr><tr class="passedeven"><td><a href="#m4">Sort_assertion</a></td><td rowspan="1">1609373608258</td><td rowspan="1">625</td></tr><tr class="passedeven"><td><a href="#m5">Submit_Form_Label</a></td><td rowspan="1">1609373621431</td><td rowspan="1">835</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">Testes.BasePage</td><td><a href="#m0">Hard_assertion</a></td><td rowspan="1">1609375065109</td><td rowspan="1">230</td></tr><tr class="failedeven"><td><a href="#m1">verifyDB</a></td><td rowspan="1">1609375135284</td><td rowspan="1">10558</td></tr><tr class="failedeven"><td><a href="#m2">verifyemailTriggered</a></td><td rowspan="1">1609375156700</td><td rowspan="1">2034</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Testes.BasePage</td><td><a href="#m3">FillForm</a></td><td rowspan="1">1609375046907</td><td rowspan="1">5000</td></tr><tr class="passedeven"><td><a href="#m4">Sort_assertion</a></td><td rowspan="1">1609375078454</td><td rowspan="1">1090</td></tr><tr class="passedeven"><td><a href="#m5">Submit_Form_Label</a></td><td rowspan="1">1609375101372</td><td rowspan="1">1930</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Pages.BasePage#Hard_assertion</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+<h2>Default test</h2><h3 id="m0">Testes.BasePage#Hard_assertion</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:568)
 	at org.testng.Assert.assertEquals(Assert.java:578)
-	at Pages.BasePage.Hard_assertion(BasePage.java:123)
+	at Testes.BasePage.Hard_assertion(BasePage.java:123)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -47,7 +47,7 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Pages.BasePage#verifyDB</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+<h3 id="m1">Testes.BasePage#verifyDB</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
@@ -58,7 +58,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
 	at java.sql.DriverManager.getConnection(Unknown Source)
 	at java.sql.DriverManager.getConnection(Unknown Source)
-	at Pages.BasePage.verifyDB(BasePage.java:187)
+	at Testes.BasePage.verifyDB(BasePage.java:187)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -113,7 +113,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
 	... 34 more
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Pages.BasePage#verifyemailTriggered</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+<h3 id="m2">Testes.BasePage#verifyemailTriggered</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
@@ -124,7 +124,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
 	at java.sql.DriverManager.getConnection(Unknown Source)
 	at java.sql.DriverManager.getConnection(Unknown Source)
-	at Pages.BasePage.verifyemailTriggered(BasePage.java:232)
+	at Testes.BasePage.verifyemailTriggered(BasePage.java:232)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -179,8 +179,8 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
 	... 34 more
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Pages.BasePage#FillForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Pages.BasePage#Sort_assertion</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">Pages.BasePage#Submit_Form_Label</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Testes.BasePage#FillForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Testes.BasePage#Sort_assertion</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Testes.BasePage#Submit_Form_Label</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

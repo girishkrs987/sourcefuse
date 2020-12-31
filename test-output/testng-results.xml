@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="3" ignored="0" total="6" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="93687" started-at="2020-12-31T00:12:38Z" finished-at="2020-12-31T00:14:12Z">
+  <suite name="Default suite" duration-ms="153537" started-at="2020-12-31T00:36:46Z" finished-at="2020-12-31T00:39:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="93687" started-at="2020-12-31T00:12:38Z" finished-at="2020-12-31T00:14:12Z">
-      <class name="Pages.BasePage">
-        <test-method status="PASS" signature="open()[pri:0, instance:Pages.BasePage@204f30ec]" name="open" is-config="true" duration-ms="13251" started-at="2020-12-31T00:12:38Z" finished-at="2020-12-31T00:12:52Z">
+    <test name="Default test" duration-ms="153537" started-at="2020-12-31T00:36:46Z" finished-at="2020-12-31T00:39:19Z">
+      <class name="Testes.BasePage">
+        <test-method status="PASS" signature="open()[pri:0, instance:Testes.BasePage@204f30ec]" name="open" is-config="true" duration-ms="40846" started-at="2020-12-31T00:36:46Z" finished-at="2020-12-31T00:37:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method status="PASS" signature="FillForm()[pri:0, instance:Pages.BasePage@204f30ec]" name="FillForm" duration-ms="6252" started-at="2020-12-31T00:12:52Z" finished-at="2020-12-31T00:12:58Z">
+        <test-method status="PASS" signature="FillForm()[pri:0, instance:Testes.BasePage@204f30ec]" name="FillForm" duration-ms="5000" started-at="2020-12-31T00:37:26Z" finished-at="2020-12-31T00:37:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FillForm -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Pages.BasePage@204f30ec]" name="CloseBrowser" is-config="true" duration-ms="2435" started-at="2020-12-31T00:12:58Z" finished-at="2020-12-31T00:13:00Z">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Testes.BasePage@204f30ec]" name="CloseBrowser" is-config="true" duration-ms="795" started-at="2020-12-31T00:37:31Z" finished-at="2020-12-31T00:37:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method status="PASS" signature="open()[pri:0, instance:Pages.BasePage@204f30ec]" name="open" is-config="true" duration-ms="14234" started-at="2020-12-31T00:13:00Z" finished-at="2020-12-31T00:13:15Z">
+        <test-method status="PASS" signature="open()[pri:0, instance:Testes.BasePage@204f30ec]" name="open" is-config="true" duration-ms="12402" started-at="2020-12-31T00:37:32Z" finished-at="2020-12-31T00:37:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method status="FAIL" signature="Hard_assertion()[pri:0, instance:Pages.BasePage@204f30ec]" name="Hard_assertion" duration-ms="150" started-at="2020-12-31T00:13:15Z" finished-at="2020-12-31T00:13:15Z">
+        <test-method status="FAIL" signature="Hard_assertion()[pri:0, instance:Testes.BasePage@204f30ec]" name="Hard_assertion" duration-ms="230" started-at="2020-12-31T00:37:45Z" finished-at="2020-12-31T00:37:45Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -36,7 +36,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:568)
 at org.testng.Assert.assertEquals(Assert.java:578)
-at Pages.BasePage.Hard_assertion(BasePage.java:123)
+at Testes.BasePage.Hard_assertion(BasePage.java:123)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -68,39 +68,39 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Hard_assertion -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Pages.BasePage@204f30ec]" name="CloseBrowser" is-config="true" duration-ms="848" started-at="2020-12-31T00:13:15Z" finished-at="2020-12-31T00:13:16Z">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Testes.BasePage@204f30ec]" name="CloseBrowser" is-config="true" duration-ms="740" started-at="2020-12-31T00:37:45Z" finished-at="2020-12-31T00:37:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method status="PASS" signature="open()[pri:0, instance:Pages.BasePage@204f30ec]" name="open" is-config="true" duration-ms="12184" started-at="2020-12-31T00:13:16Z" finished-at="2020-12-31T00:13:28Z">
+        <test-method status="PASS" signature="open()[pri:0, instance:Testes.BasePage@204f30ec]" name="open" is-config="true" duration-ms="12355" started-at="2020-12-31T00:37:46Z" finished-at="2020-12-31T00:37:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method status="PASS" signature="Sort_assertion()[pri:0, instance:Pages.BasePage@204f30ec]" name="Sort_assertion" duration-ms="625" started-at="2020-12-31T00:13:28Z" finished-at="2020-12-31T00:13:28Z">
+        <test-method status="PASS" signature="Sort_assertion()[pri:0, instance:Testes.BasePage@204f30ec]" name="Sort_assertion" duration-ms="1090" started-at="2020-12-31T00:37:58Z" finished-at="2020-12-31T00:37:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Sort_assertion -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Pages.BasePage@204f30ec]" name="CloseBrowser" is-config="true" duration-ms="830" started-at="2020-12-31T00:13:28Z" finished-at="2020-12-31T00:13:29Z">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Testes.BasePage@204f30ec]" name="CloseBrowser" is-config="true" duration-ms="977" started-at="2020-12-31T00:37:59Z" finished-at="2020-12-31T00:38:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method status="PASS" signature="open()[pri:0, instance:Pages.BasePage@204f30ec]" name="open" is-config="true" duration-ms="11715" started-at="2020-12-31T00:13:29Z" finished-at="2020-12-31T00:13:41Z">
+        <test-method status="PASS" signature="open()[pri:0, instance:Testes.BasePage@204f30ec]" name="open" is-config="true" duration-ms="20846" started-at="2020-12-31T00:38:00Z" finished-at="2020-12-31T00:38:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method status="PASS" signature="Submit_Form_Label()[pri:0, instance:Pages.BasePage@204f30ec]" name="Submit_Form_Label" duration-ms="835" started-at="2020-12-31T00:13:41Z" finished-at="2020-12-31T00:13:42Z">
+        <test-method status="PASS" signature="Submit_Form_Label()[pri:0, instance:Testes.BasePage@204f30ec]" name="Submit_Form_Label" duration-ms="1930" started-at="2020-12-31T00:38:21Z" finished-at="2020-12-31T00:38:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Submit_Form_Label -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Pages.BasePage@204f30ec]" name="CloseBrowser" is-config="true" duration-ms="1249" started-at="2020-12-31T00:13:42Z" finished-at="2020-12-31T00:13:43Z">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Testes.BasePage@204f30ec]" name="CloseBrowser" is-config="true" duration-ms="756" started-at="2020-12-31T00:38:23Z" finished-at="2020-12-31T00:38:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method status="PASS" signature="open()[pri:0, instance:Pages.BasePage@204f30ec]" name="open" is-config="true" duration-ms="11255" started-at="2020-12-31T00:13:43Z" finished-at="2020-12-31T00:13:54Z">
+        <test-method status="PASS" signature="open()[pri:0, instance:Testes.BasePage@204f30ec]" name="open" is-config="true" duration-ms="31221" started-at="2020-12-31T00:38:24Z" finished-at="2020-12-31T00:38:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method status="FAIL" signature="verifyDB()[pri:0, instance:Pages.BasePage@204f30ec]" name="verifyDB" duration-ms="2311" started-at="2020-12-31T00:13:54Z" finished-at="2020-12-31T00:13:57Z">
+        <test-method status="FAIL" signature="verifyDB()[pri:0, instance:Testes.BasePage@204f30ec]" name="verifyDB" duration-ms="10558" started-at="2020-12-31T00:38:55Z" finished-at="2020-12-31T00:39:05Z">
           <exception class="com.mysql.cj.jdbc.exceptions.CommunicationsException">
             <message>
               <![CDATA[Communications link failure
@@ -119,7 +119,7 @@ at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
 at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
 at java.sql.DriverManager.getConnection(Unknown Source)
 at java.sql.DriverManager.getConnection(Unknown Source)
-at Pages.BasePage.verifyDB(BasePage.java:187)
+at Testes.BasePage.verifyDB(BasePage.java:187)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -179,15 +179,15 @@ at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDB -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Pages.BasePage@204f30ec]" name="CloseBrowser" is-config="true" duration-ms="826" started-at="2020-12-31T00:13:57Z" finished-at="2020-12-31T00:13:57Z">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Testes.BasePage@204f30ec]" name="CloseBrowser" is-config="true" duration-ms="1582" started-at="2020-12-31T00:39:05Z" finished-at="2020-12-31T00:39:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method status="PASS" signature="open()[pri:0, instance:Pages.BasePage@204f30ec]" name="open" is-config="true" duration-ms="11702" started-at="2020-12-31T00:13:57Z" finished-at="2020-12-31T00:14:09Z">
+        <test-method status="PASS" signature="open()[pri:0, instance:Testes.BasePage@204f30ec]" name="open" is-config="true" duration-ms="9271" started-at="2020-12-31T00:39:07Z" finished-at="2020-12-31T00:39:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method status="FAIL" signature="verifyemailTriggered()[pri:0, instance:Pages.BasePage@204f30ec]" name="verifyemailTriggered" duration-ms="2006" started-at="2020-12-31T00:14:09Z" finished-at="2020-12-31T00:14:11Z">
+        <test-method status="FAIL" signature="verifyemailTriggered()[pri:0, instance:Testes.BasePage@204f30ec]" name="verifyemailTriggered" duration-ms="2034" started-at="2020-12-31T00:39:16Z" finished-at="2020-12-31T00:39:18Z">
           <exception class="com.mysql.cj.jdbc.exceptions.CommunicationsException">
             <message>
               <![CDATA[Communications link failure
@@ -206,7 +206,7 @@ at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
 at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
 at java.sql.DriverManager.getConnection(Unknown Source)
 at java.sql.DriverManager.getConnection(Unknown Source)
-at Pages.BasePage.verifyemailTriggered(BasePage.java:232)
+at Testes.BasePage.verifyemailTriggered(BasePage.java:232)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -266,11 +266,11 @@ at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyemailTriggered -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Pages.BasePage@204f30ec]" name="CloseBrowser" is-config="true" duration-ms="909" started-at="2020-12-31T00:14:11Z" finished-at="2020-12-31T00:14:12Z">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Testes.BasePage@204f30ec]" name="CloseBrowser" is-config="true" duration-ms="832" started-at="2020-12-31T00:39:18Z" finished-at="2020-12-31T00:39:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- Pages.BasePage -->
+      </class> <!-- Testes.BasePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

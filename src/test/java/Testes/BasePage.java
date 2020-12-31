@@ -1,4 +1,4 @@
-package Pages;
+package Testes;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
