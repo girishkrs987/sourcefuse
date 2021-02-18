@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
@@ -18,6 +19,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -63,7 +65,9 @@ public class BasePage {
 		String pwd="t63KUfxL5vUyFLG4eqZNUcuRQ";
 		String URL = "http://" + uname + ":" + pwd + "@" +urladds ;
 		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.firefoxdriver().setup();
 		  driver = new ChromeDriver();
+		  //driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
@@ -113,7 +117,7 @@ public class BasePage {
 			}
 			
 			
-			@Test(enabled=true)
+			@Test(enabled=false)
 			public void Hard_assertion() {
 				
 				//By Submit_button = By.xpath("/html/body/div/form/button[1]");
@@ -136,7 +140,7 @@ public class BasePage {
 			System.out.println("All input fileds displayed – Assert passed");
 			}
 			
-		@Test(enabled=true)
+		@Test(enabled=false)
 		public void FillForm() throws InterruptedException {
 			
 			driver.findElement(First_Name).sendKeys("Girish");
@@ -166,7 +170,7 @@ public class BasePage {
 			
 		}
 		
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void verifyDB() throws ClassNotFoundException, SQLException {
 		//Connection URL Syntax: "jdbc:mysql://ipaddress:portnumber/db_name"		
         String dbUrl = "jdbc:mysql://localhost:3036/emp";					
@@ -211,7 +215,7 @@ public class BasePage {
 			
 		}
 
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void verifyemailTriggered() throws ClassNotFoundException, SQLException {
 		//Connection URL Syntax: "jdbc:mysql://ipaddress:portnumber/db_name"		
         String dbUrl = "jdbc:mysql://localhost:3036/emp";					
@@ -255,7 +259,59 @@ public class BasePage {
 
 	}
 	
+	@Test(enabled=false)
+	public void sorting() {
+		
+		int num[]= new int[] {90,8,98,3,87}; 
+		
+		int count=num.length;
+		
+		for (int i=0; i<count;i++) {
+			for(int j=i+1; j<count; j++ ) {
+				
+				if(num[i]<num[j]) {
+					int temp=num[i];
+					num[i]=num[j];
+					num[j]=temp;
+					
+				}
+				
+			}
+			
+		}
+		System.out.println("Array Elements in Ascending Order:");
+		
+		for(int i=0; i<count-1;i++) {
+			System.out.println(num[i]+ ",");
+		}
+		System.out.println(num[count-1]);
+	}
 	
+	
+	@Test(enabled=false)
+	public void random_num() {
+		
+		int min=1;
+		int max=100;
+		
+		Random nandomnum = new Random(); 
+		int ran= min + nandomnum.nextInt(max);
+		
+		System.out.println(ran);
+		
+	}
+	
+	@Test(enabled=true)
+	public void nd_data(){
+		
+		String str= "girish.krs.897@gmail.com";
+		String str1="girish.krs.897@gmail.com";
+		
+		str.substring(10);
+		//System.out.println(str.subSequence(11, 23));
+		System.out.println(str.compareTo(str1));
+		
+	}
 	@AfterMethod
 	public void CloseBrowser() {
 		driver.quit();

@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testes.BasePage">
+      <class name="Testes.Basics">
         <methods>
-          <include name="verifyDB"/>
-          <include name="verifyemailTriggered"/>
-          <include name="Hard_assertion"/>
-          <include name="open"/>
           <include name="CloseBrowser"/>
+          <include name="Submit_Form_Label"/>
+          <include name="open"/>
         </methods>
-      </class> <!-- Testes.BasePage -->
+      </class> <!-- Testes.Basics -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
