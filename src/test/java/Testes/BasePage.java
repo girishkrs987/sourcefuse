@@ -37,6 +37,8 @@ public class BasePage {
 	SoftAssert Sassert =new SoftAssert();
 	
 	WebDriver  driver;
+	
+	//
 	By First_Name = By.xpath("//*[@id=\"fnameInput\"]/input");
 	By Last_Name= By.xpath("//*[@id=\"lnameInput\"]/input");
 	By email= By.xpath("//*[@id=\"emailInput\"]/input");
